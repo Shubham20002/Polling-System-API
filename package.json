@@ -1,0 +1,14 @@
+{
+  "name": "polling_system_api",
+  "version": "1.0.0",
+  "description": "poslling system api app",
+  "main": "index.js",
+  "scripts": {
+    "test": "."
+  },
+  "author": "shubham patil",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
