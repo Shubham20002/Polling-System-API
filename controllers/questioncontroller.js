@@ -32,3 +32,13 @@ module.exports.optioncreate= async function(req,res){
     }
  
 }
+
+
+module.exports.delete= async function(req,res){
+   await Question.findByIdAndDelete(req.params.id);
+   await Option.deleteMany({question:req.params.id});
+
+   return res.status(200).json({
+    message:"Question and option are deleted"
+   })
+}
