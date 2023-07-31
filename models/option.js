@@ -22,5 +22,5 @@ const optionSchema=new mongoose.Schema({
     timestamps:true
 });
 
-const option=mongoose.model('option',optionSchema);
-module.exports=option;
+const Option=mongoose.model('Option',optionSchema);
+module.exports=Option;
