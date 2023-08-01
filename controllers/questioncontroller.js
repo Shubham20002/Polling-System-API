@@ -25,11 +25,14 @@ module.exports.question= async function(req,res){
  })
 }
 
+
+//function to add question
 module.exports.create=function(req,res){
    Question.create(req.body);
    return res.send('qestion added successfully');
 }
 
+//function to create option
 module.exports.optioncreate= async function(req,res){
     const question=await Question.findById(req.params.id);
     try{
@@ -51,7 +54,7 @@ module.exports.optioncreate= async function(req,res){
  
 }
 
-
+//function to delete question
 module.exports.delete= async function(req,res){
    await Question.findByIdAndDelete(req.params.id);
    await Option.deleteMany({question:req.params.id});
