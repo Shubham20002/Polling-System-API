@@ -1,6 +1,7 @@
 const mongoose=require('mongoose');
+const env=require('./env');
 
-mongoose.connect('mongodb://localhost/Polling_System_API');
+mongoose.connect(`${env.db}`);
 
 const db=mongoose.connection;
 
