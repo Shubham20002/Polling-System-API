@@ -11,4 +11,4 @@ const production={
 
 }
 
-module.exports=module.exports=eval(process.env.pollingdb)== undefined ? development :eval(process.env.pollingdb) ;
+module.exports=module.exports=eval(process.env.pollingenv)== undefined ? development :eval(process.env.pollingenv) ;
