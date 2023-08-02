@@ -1,6 +1,8 @@
 const express=require('express');
-const port=8000;
+const env=require('./config/env');
+const port=env.port;
 const app=express();
+
 const db=require('./config/mongoose');
 
 
